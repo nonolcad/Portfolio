@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noa Cadeau</title>
+    <link rel="icon" href="assets/img/fivcon.png" type="image/fivcon">
     <link rel="stylesheet" href="assets/CSS/styles.css">
     <script src="assets/JS/script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
@@ -20,8 +21,7 @@
                     et je suis étudiant à <span class="gras">La Manu</span> à Amiens. Passionné par le design, le développement de jeux vidéo et le partage d'idées.
                 </h2>
                 <h3>
-                    Si vous souhaitez me contacter, envoyez-moi un message ici : <a href="mailto:noalcad80@gmail.com">
-
+                    Si vous souhaitez me contacter, envoyez-moi un message ici : <a href="mailto:noalcad80@gmail.com" class="mail">
                         <span class="gras">noalcad80@gmail.com</span>
                     </a>
                 </h3>
@@ -38,35 +38,45 @@
             </div>
         </div>
     </header>
-    <section class="projets">
+    <section class="projets-section">
         <h2 class="titre-section">Mes Projets</h2>
-        <div class="contenant-projets">
-            <article class="projet">
-                <a href="https://www.figma.com/design/krdeoR6fn1GsgPYmXCoMef/Campus-Flow?node-id=0-1&m=dev&t=qz9lAwBx0GHq3KTS-1" target="_blank" class="lien-projets">
-                    <div class="image-projet">
-                        <img src="assets/img/Logo Campus Flow.png" alt="Maquette Figma Projet 1">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                
+                <div class="slide active">
+                    <div class="projet-content">
+                        <div class="image-cote">
+                            <img src="assets/img/Logo Campus Flow.png" alt="Campus Flow">
+                        </div>
+                        <div class="info-cote">
+                            <h3>Campus Flow</h3>
+                            <p>Conception UX/UI sur Figma d'une application destinée aux étudiants. Le projet a pour but la création d'une interface utilisateur intuitive répondant aux problématiques d'un campus.</p>
+                            <div class="group-boutons">
+                                <a href="https://www.figma.com/..." target="_blank" class="bouton-action">Voir sur Figma</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="projet-infos">
-                        <h3>Campus Flow</h3>
-                        <p>Conception UX/UI sur Figma d'une application destinée aux étudiants. Le projet à pour but la création d'une interface utilisateur intuitive répondant aux problématiques d'un campus.</p>
+                </div>
+                <div class="slide">
+                    <div class="projet-content">
+                        <div class="image-cote">
+                            <img src="assets/img/Logo Instant Gaming.png" alt="Instant Gaming">
+                        </div>
+                        <div class="info-cote">
+                            <h3>Instant Gaming</h3>
+                            <p>Conception UX/UI sur Figma d'une maquette du site Instant Gaming. C'est notre premier projet de conception d'interface utilisant la suite Adobe pour les assets.</p>
+                            <div class="group-boutons">
+                                <a href="https://www.figma.com/..." target="_blank" class="bouton-action">Voir sur Figma</a>
+                                <a href="assets/fichiers/projet_adobe.zip" class="bouton-action secondaire" download>Télécharger Assets</a>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </article>
-        </div>
-    </section>
-        <section class="projets">
-        <div class="contenant-projets">
-            <article class="projet">
-                <a href="https://www.figma.com/design/mFljCaBdQ6cN3LsFwhzhjp/instant?node-id=0-1&m=dev&t=AETh8F4uRagaWqxj-1" target="_blank" class="lien-projets">
-                    <div class="image-projet">
-                        <img src="assets/img/Logo Instant Gaming.png" alt="Maquette Figma Projet 2">
-                    </div>
-                    <div class="projet-infos">
-                        <h3>Instant Gaming</h3>
-                        <p>Conception UX/UI sur Figma d'une maquette du site Instant Gaming. C'est notre premier projet de conception d'interface.</p>
-                    </div>
-                </a>
-            </article>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="nav-btn prev">←</button>
+                <button class="nav-btn next">→</button>
+            </div>
         </div>
     </section>
 </body>
