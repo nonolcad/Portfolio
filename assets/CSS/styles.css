@@ -314,9 +314,70 @@ h3{
   transform: translateX(-5px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  header {
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .presentation {
+      flex-direction: column-reverse; 
+      gap: 3rem;
+  }
+
+  h1 {
+      font-size: 3rem;
+      letter-spacing: -1px;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+  }
+
+  .logo img {
+      width: 200px; 
+  }
+
+  .projets-section {
+      margin: 50px auto;
+      padding: 0 1rem;
+  }
+
+  .titre-section {
+      font-size: 2.2rem;
+      text-align: center;
+  }
+  
+  .titre-section::after {
+      margin: 5px auto 0;
+  }
+
+  .slide {
+      padding: 0; 
+  }
+
   .projet-content {
-      flex-direction: column;
+      flex-direction: column; 
       gap: 2rem;
+      text-align: center;
+  }
+
+  .info-cote h3 {
+      font-size: 2.2rem;
+  }
+
+  .info-cote p {
+      font-size: 1rem;
+  }
+
+  .group-boutons {
+      justify-content: center; 
+  }
+
+  .nav-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 1rem;
   }
 }
